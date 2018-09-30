@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Firebase CRUD Example</title>
+    <meta name="author" content="araditama">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pemrograman Integratif</h1>
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <h2>List Data Mahasiswa</h2>
+                <div class="columns is-multiline" id="list-mahasiswa">
+
+                </div>
+            </div>
+            <div class="column auto">
+                <form id="preview">
+                    <div class="field">
+                        <label class="label">NIM</label>
+                        <div class="control">
+                            <input id="nim" class="input" type="text" placeholder="NIM" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Nama</label>
+                        <div class="control">
+                            <input id="nama" class="input" type="text" placeholder="Nama Lengkap" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Pesan</label>
+                        <div class="control">
+                            <textarea class="textarea" id="pesan" placeholder="e.g. Hello world"></textarea>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
